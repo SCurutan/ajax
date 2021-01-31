@@ -1,16 +1,37 @@
-function start() {
+// function start() {
+//     $("#menu a:first").click();
+// }
+
+// $(window).on("load", start);
+
+// function loadpage(e) {
+//     e.preventDefault();
+//     $("#menu a.active").removeClass("active");
+//     $(this).addClass("active");
+
+//     var href = $(this).attr("href");
+//     $("#content").load(href);
+// }
+
+// $(document).on("click", "#menu a", loadpage);
+
+
+function start(){
     $("#menu a:first").click();
+
 }
 
 $(window).on("load", start);
 
-function loadpage(e) {
+function loadpage(e){
+
     e.preventDefault();
     $("#menu a.active").removeClass("active");
     $(this).addClass("active");
 
-    var href = $(this).attr("href");
-    $("#content").load("href");
+    var href = $(this).attr("href");    
+    $("#content").load(href);
+
 }
 
 $(document).on("click", "#menu a", loadpage);
